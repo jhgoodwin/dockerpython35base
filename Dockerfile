@@ -1,5 +1,7 @@
 FROM python:3.5
 
+LABEL maintainer=john@jjgoodwin.com
+
 ENV HOME /root
 ENV ORACLE_HOME /usr/lib/oracle/12.1/client64
 
