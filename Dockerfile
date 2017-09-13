@@ -6,7 +6,7 @@ ENV HOME /root
 ENV ORACLE_HOME /usr/lib/oracle/12.1/client64
 
 RUN apt-get update \
-    && apt-get -yq install alien \
+    && apt-get -yq install alien libaio1 \
 	&& apt-get -yq autoremove \
 	&& apt-get clean \
 	# Install Oracle Instant Client 12 from Pennsylvania State University repository
